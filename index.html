@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<style>
+    body {
+        size: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background-color: #FEF1E1;
+        color: #333;
+        /* Negro medio vintage */
+        font-family: 'Playfair Display', serif;
+        /* Otras propiedades de estilo aquí */
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        /* Agregado para usar flexbox */
+        flex-direction: column;
+        /* Alinear verticalmente en columna */
+        height: 100vh;
+        /* Hacer que el contenedor ocupe el 100% de la altura visible */
+        justify-content: center;
+        /* Centrar verticalmente */
+    }
+
+    .centered-text,
+    .sub-text {
+        font-size: large;
+        opacity: 0;
+        transform: translateY(0px);
+        transition: opacity 2s ease, transform 2s ease;
+    }
+
+    .centered-text {
+        text-align: center;
+        margin-bottom: 5px;
+        /* Espacio entre A1 y A2 */
+    }
+
+    .sub-text {
+        text-align: right;
+        margin-bottom: 5px;
+        /* Espacio entre A1 y A2 */
+    }
+</style>
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💌Para Solim</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="centered-text" id="textA1">
+            <h1>🎁Regalo de San Valentin para Solim🎁</h1>
+        </div>
+        <div class="sub-text" id="textA2">
+            <p>Espero que disfrutes de este pequeño detalle, hecho con mucho amor especialmente para ti.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
